@@ -6,10 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="texte/css" href="style.css">
     <link rel="stylesheet" type="texte/sass" href="style.scss">
-    <title>Document</title>
+    <title>ohmyfood</title>
+    <!--Google font-->
+    <script src="https://kit.fontawesome.com/0b6d538c32.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/logo/ohmyfood.png">
 </head>
 <body>
-    <h1>ohmyfood</h1>
-    <h2>je veux manger</h2>
+    <!--Navigatiion bar-->
+    <header>
+        <img src="./assets/logo/ohmyfood.png" alt="logo.ohmyfood"/>
+        <div class="map">
+            <i class="fa fa-map-marker-alt"> </i>
+            <form method="post" action="traitement.php">
+                <input class="city" type="search" placeholder="Paris,Belleville">
+            </form>
+        </div>
+      
+        <section>
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception sélectionné par nos soins</p>
+        <div class="explore">
+            <form method="post" action="traitement.php">
+                <input class="city" type="explore" placeholder="Explorer nos restaurants">
+            </form>
+
+        </div>
+      </section>
+    </header>
+
+    <!--Functioning-->
+    <section class="functioning-section">
+        <h2>Fonctionnements</h2>
+        <div class="functioning-icones">
+            <div class="functioning">
+                <div class="icones">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <p>Choisissez un restaurant</p>
+
+            </div>
+
+            <div class="functioning">
+                <div class="icones">
+                    <i class="fa-solid fa-square-list"></i>
+
+                </div>
+                <p>Composez votre menu</p>
+
+            </div>
+
+            <div class="functioning">
+                <div class="icones">
+
+                </div>
+                <p>Dégustez au restaurant</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--main Menu presentation-->
+    <main>
+    <section class="menu presentation">
+        <h3>Restaurants</h3>
+        <div class="bloc">
+            <a href="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"><img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de La palette du gout" title="cliquez pour agrandir" /></a>
+            <div class="text-picture">
+                <h4>La palette du gout</h4>
+                <p>Ménilmontant</p>
+                <div class="icone">
+                    <i class="fas fa-heart icone_cercle"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bloc">
+            <a href="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"><img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de La note enchantée" title="cliquez pour agrandir" /></a>
+            <div class="text-picture">
+                <h4>La note enchantée</h4>
+                <p>Charonne</p>
+                <div class="icone">
+                    <i class="fas fa-heart icone_cercle"></i>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="bloc">
+            <a href="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"><img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de Ala française" title="cliquez pour agrandir"/></a>
+            <div class="text-picture">
+                <h4>A la française</h4>
+                <p>Cité Rouge</p>
+                <div class="icone">
+                    <i class="fas fa-heart icone_cercle"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bloc">
+            <a href="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"><img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de Le délice des sens" title="cliquez pour agrandir"/></a>
+            <div class="text-picture">
+                <h4>Le délice des sens</h4>
+                <p>Folie-Méricourt</p>
+                <div class="icone">
+                    <i class="fas fa-heart icone_cercle"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    </main>
 </body>
+
+<!--Footer-->
+<footer>
+
+</footer>
 </html>
