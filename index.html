@@ -4,130 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="texte/css" href="style.css">
-    <link rel="stylesheet" type="texte/sass" href="style.scss">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/style.scss">
     <title>ohmyfood</title>
     <!--Google font-->
     <script src="https://kit.fontawesome.com/0b6d538c32.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/logo/ohmyfood.png">
+    <!--Google family-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Navigatiion bar-->
+    <!--Header-->
     <header>
-        <img src="./assets/logo/ohmyfood.png" alt="logo.ohmyfood"/>
-        <div class="map">
-            <i class="fa fa-map-marker-alt"> </i>
-            <form method="post" action="traitement.php">
-                <input class="city" type="search" placeholder="Paris,Belleville">
-            </form>
+        <div class="logo">
+        <img class="logo_img" src="./assets/logo/ohmyfood.png" alt="logo.ohmyfood"/>
         </div>
-      
-        <section>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception sélectionné par nos soins</p>
-        <div class="explore">
-            <form method="post" action="traitement.php">
-                <input class="city" type="explore" placeholder="Explorer nos restaurants">
-            </form>
-
-        </div>
-      </section>
     </header>
 
-    <!--Functioning-->
+    <!--Localisation-->
+    <section class="search-bar">
+        
+        <div class="search-bar_map">
+            <i class="fa fa-map-marker-alt"> </i>
+        </div>
+        <p> <strong>Paris, Belleville</strong> </p>
+    </section>
+
+    <!--Présentation-->
+    <section class="presentation">
+        <div class="presentation-explorer">
+          <h1 class="presentation_title">Réservez le menu qui vous convient</h1>
+          <p class="presentation_subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button class="presentation_button">
+              <a href="#">Explorer nos restaurants</a>
+            </button>
+        </div>
+          
+      </section>
+   
+
+    <!--Fonctionnements-->
     <section class="functioning-section">
-        <h2>Fonctionnements</h2>
-        <div class="functioning-icones">
-            <div class="functioning">
-                <div class="icones">
+        <h2 class="functioning_title">Fonctionnements</h2>
+        <div class="functioning">
+            <div class="functioning_icone">
                     <i class="fa-solid fa-mobile-screen"></i>
-                </div>
                 <p>Choisissez un restaurant</p>
+                <div class="fuctioning_icone_number">
+                    1
+                </div>
 
             </div>
 
-            <div class="functioning">
-                <div class="icones">
-                    <i class="fa-solid fa-square-list"></i>
-
-                </div>
+            <div class="functioning_icone">
+                    <i class="fa-solid fa-list-ul"></i>
                 <p>Composez votre menu</p>
+                <div class="functioning_icone_number">2</div>
 
             </div>
 
-            <div class="functioning">
-                <div class="icones">
-
-                </div>
+            <div class="functioning_icone">
+                <i class="fas fa-store"></i>
                 <p>Dégustez au restaurant</p>
+                <div class="functioning_icone_number">3</div>
 
             </div>
 
         </div>
     </section>
 
-    <!--main Menu presentation-->
+    <!--main restaurants-->
     <main>
-    <section class="menu presentation">
-        <h3>Restaurants</h3>
-        <div class="bloc">
-            <a href="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"><img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de La palette du gout" title="cliquez pour agrandir" /></a>
-            <div class="text-picture">
-                <h4>La palette du gout</h4>
-                <p>Ménilmontant</p>
-                <div class="icone">
-                    <i class="fas fa-heart icone_cercle"></i>
+        <section class="restaurant">
+            <div class="restaurant_title">
+                <h3>Restaurants</h3>
+            </div>
+            <div class="restaurant_bloc">
+                <a href="la-palette-du-gout.html">
+                    <div class="restaurant_card">
+                        <div class="restaurant_card_image">
+                            <a href="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"><img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de La palette du gout" title="cliquez pour agrandir" /></a>
 
-                </div>
+                        </div>
+                        <p class="btn_new">Nouveau</p>
+                        <div class="restaurant_card_text">
+                            <h4 class="restaurant_card_title">La palette du gout</h4>
+                            <p class="restaurant_card_subtitle">Ménilmontant</p>
+
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart icone_cercle"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <a href="la-note-enchantee.html">
+                    <div class="restaurant_card">
+                        <div class="restaurant_card_image">
+                            <a href="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"><img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de La note enchantée" title="cliquez pour agrandir" /></a>
+
+                        </div>
+                        <p class="btn_new">Nouveau</p>
+                        <div class="restaurant_card_text">
+                            <h4 class="restaurant_card_title">La enchantée</h4>
+                            <p class="restaurant_card_subtitle">Charonne</p>
+
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart icone_cercle"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <a href="à-la-française.html">
+                    <div class="restaurant_card">
+                        <div class="restaurant_card_image">
+                            <a href="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"><img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de Ala française" title="cliquez pour agrandir"/></a>
+
+                        </div>
+                        <p class="btn_new">Nouveau</p>
+                        <div class="restaurant_card_text">
+                            <h4 class="restaurant_card_title">A la française</h4>
+                            <p class="restaurant_card_subtitle">Cité Rouge</p>
+
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart icone_cercle"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <a href="le-délice-des-sens.html">
+                    <div class="restaurant_card">
+                        <div class="restaurant_card_image">
+                            <a href="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"><img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de Le délice des sens" title="cliquez pour agrandir"/></a>
+
+                        </div>
+                        <p class="btn_new">Nouveau</p>
+                        <div class="restaurant_card_text">
+                            <h4 class="restaurant_card_title">Le délice des sens</h4>
+                            <p class="restaurant_card_subtitle">Folie-Méricourt</p>
+
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart icone_cercle"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
 
             </div>
 
-        </div>
-
-        <div class="bloc">
-            <a href="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"><img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de La note enchantée" title="cliquez pour agrandir" /></a>
-            <div class="text-picture">
-                <h4>La note enchantée</h4>
-                <p>Charonne</p>
-                <div class="icone">
-                    <i class="fas fa-heart icone_cercle"></i>
-
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="bloc">
-            <a href="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"><img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de Ala française" title="cliquez pour agrandir"/></a>
-            <div class="text-picture">
-                <h4>A la française</h4>
-                <p>Cité Rouge</p>
-                <div class="icone">
-                    <i class="fas fa-heart icone_cercle"></i>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="bloc">
-            <a href="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"><img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de Le délice des sens" title="cliquez pour agrandir"/></a>
-            <div class="text-picture">
-                <h4>Le délice des sens</h4>
-                <p>Folie-Méricourt</p>
-                <div class="icone">
-                    <i class="fas fa-heart icone_cercle"></i>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
     </main>
 </body>
 
