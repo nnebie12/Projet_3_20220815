@@ -48,6 +48,9 @@
   background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0.25rem 0.25rem 10px;
 }
+.presentation a {
+  text-decoration: none;
+}
 .presentation:hover {
   opacity: 0.8;
   box-shadow: 1rem 1rem 20px;
@@ -71,7 +74,6 @@
 }
 .functioning-section_icone {
   margin: 0 20px 20px 40px;
-  margin-left: 20px;
   padding: 30px 50px 30px 18px;
   font-weight: bold;
   background: #F6F6F6;
@@ -80,7 +82,7 @@
   width: 300px;
   max-height: 78px;
 }
-.functioning-section:hover {
+.functioning-section_icone:hover {
   background: #f5edff;
 }
 .functioning-section .fas {
@@ -103,34 +105,69 @@
 .restaurant {
   background: #f6f6f6;
 }
-.restaurant_title {
-  padding: 50px 0 10px 22px;
+.restaurant_title h3 {
+  padding: 30px 0 10px 22px;
 }
-.restaurant_bloc {
+.restaurant_bloc a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 .restaurant_card {
   border-radius: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   background: white;
   position: relative;
-  max-width: 280px;
-  min-width: 280px;
+  max-width: 250px;
 }
-.restaurant_card_image {
+.restaurant_card_image a img {
   width: 100%;
-  max-height: 175px;
+  max-height: 170px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   object-fit: cover;
 }
-.restaurant_heart {
+.restaurant_heart fas {
   position: absolute;
   right: 20px;
   top: 1;
+}
+.restaurant .btn_new {
+  background: #99E2D0;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  color: #1b6150;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+/*Fin du main*/
+/*Début du footer*/
+.section_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #353535;
+  color: #FFF;
+  padding: 25px 0;
+  min-width: 320px;
+}
+.section_footer_title h5 {
+  margin: 0 0 10px 20 px;
+  color: #e6e6e6;
+  font-family: "Shrikhand, cursive";
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.section_footer a {
+  text-decoration: none;
+}
+.section_footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */
