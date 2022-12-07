@@ -3,24 +3,27 @@
 
 /* animation du coeur */
 
-@keyframes heart-grow {
+@keyframes itemAppear {
     0% {
-        transform: scale(0);
-    }
-    7% {
-        transform: scale(0.34);
-    }
-    24% {
-        transform: scale(0.48);
-    }
-    34% {
-        transform: scale(0.62);
-    }
-    57% {
-        transform: scale(1.15);
+        transform: scale(0)
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0.5rem);
+    }
+    75% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -51,25 +54,5 @@
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-
-/* animation du menu */
-
-@keyframes anim-menu {
-    0% {
-        opacity: 0;
-        transform: translateY(-60px);
-    }
-    35% {
-        opacity: 0;
-    }
-    90% {
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
     }
 }
